@@ -27,13 +27,35 @@ body {
   padding: 8px;
 }
 
-#navbar .buttons {
+#navbar .hamburger {
+  position: absolute;
+  top: 37px;
+  right: 19px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 19px;
+  z-index: 2;
+}
+
+#navbar .hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.buttons {
   display: flex;
   width: 50%;
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
   font-weight: 500;
+}
+
+.btn {
   cursor: pointer;
 }
 
@@ -68,9 +90,15 @@ body {
 }
 
 .description a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+}
+
+#arrow {
+  margin-left: 8px;
 }
 
 .interior {
@@ -93,6 +121,7 @@ body {
   bottom: -113px;
   left: 40%;
   padding: 23px 26px;
+  box-shadow: 1px 5px 5px #000;
 }
 
 .person {
@@ -138,4 +167,8 @@ footer {
 footer a {
   text-decoration: none;
   color: #a9a9a9;
+}
+
+.border {
+  display: none;
 }

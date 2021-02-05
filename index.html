@@ -18,13 +18,32 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 600px)"
+      href="styles/mobile.css"
+    />
     <title>Interior Consultant</title>
   </head>
   <body>
     <div id="navbar">
       <div class="logo">This Interior</div>
-      <div class="buttons">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="buttons hide">
         <div class="btn active">Home</div>
         <div class="btn">Collection</div>
         <div class="btn">About</div>
@@ -38,7 +57,10 @@
           A full-Service residential & commercial interior design and staging
           company offering professional organizing & eco-services.
         </p>
-        <a href="#">Read more</a>
+        <a href="#"
+          >Read more
+          <span class="material-icons" id="arrow">arrow_right_alt</span></a
+        >
       </div>
       <div class="interior">
         <img src="img/photo1.png" alt="interior image" />
@@ -50,14 +72,16 @@
               <p class="profession">Interior designer</p>
             </div>
           </div>
-          <div class="signature">Designed in 2020 by Aliza Webber</div>
+          <div class="signature">Designed in 2021 by Aliza Webber</div>
         </div>
       </div>
     </div>
     <footer>
+      <hr class="border" />
       <a href="https://github.com/IamKosarev" target="_blank">Artem Kosarev</a>
       @
       <a href="https://devchallenges.io/" target="_blank">DevChallenges.io</a>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

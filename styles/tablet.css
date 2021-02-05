@@ -1,0 +1,45 @@
+.container {
+  display: block;
+  padding: 20px 5% 150px 5%;
+}
+
+.description {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.description h1 {
+  margin-bottom: 30px;
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.interior {
+  height: 400px;
+}
+
+.card {
+  position: absolute;
+  /* background: #333; */
+  max-width: 410px;
+  height: 155px;
+  bottom: -113px;
+  left: 19%;
+  padding: 13px 16px;
+}
+
+.signature {
+  line-height: 28px;
+}
+
+.border {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 10px;
+  background-color: #a9a9a9;
+}
