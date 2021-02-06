@@ -37,13 +37,31 @@ body {
   width: 28px;
   height: 19px;
   z-index: 2;
+  transition: all 0.3s ease-out;
 }
 
 #navbar .hamburger .bar {
   height: 3px;
   width: 100%;
-  background: #fff;
+  background: #f2f2f2;
   border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+
+#navbar .hamburger.close {
+  transform: rotate(180deg);
+}
+
+#navbar .hamburger.close .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#navbar .hamburger.close .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#navbar .hamburger.close .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .buttons {
